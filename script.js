@@ -1,6 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('change-color-btn');
-    const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722', '#795548', '#9e9e9e', '#607d8b'];
+    // Modern flat design palette
+    const colors = [
+        '#64748b', // Slate
+        '#ef4444', // Red
+        '#f97316', // Orange
+        '#f59e0b', // Amber
+        '#84cc16', // Lime
+        '#10b981', // Emerald
+        '#06b6d4', // Cyan
+        '#3b82f6', // Blue
+        '#6366f1', // Indigo
+        '#8b5cf6', // Violet
+        '#d946ef', // Fuchsia
+        '#ec4899', // Pink
+        '#f43f5e'  // Rose
+    ];
 
     button.addEventListener('click', () => {
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
